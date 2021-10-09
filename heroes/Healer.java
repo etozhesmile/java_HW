@@ -1,6 +1,6 @@
 package com.company.heroes;
 
-public class Healer extends Hero {
+public abstract class Healer extends Hero {
     protected int powerHeal;
 
     public Healer(double HP, int lvl, double damage, int powerHeal) {
@@ -13,12 +13,12 @@ public class Healer extends Hero {
     }
 
     public void heal(Hero hero) {
-        hero.HP += this.powerHeal;
+        hero.HP += this.powerHeal * 1.5;
     }
 
     @Override
-    public void printInfo() {
-        System.out.println("HP: " + this.HP + "\nlvl: " + this.lvl);
+    public void info() {
+        super.info();
         System.out.println("power of heal: " + powerHeal);
     }
 }

@@ -14,8 +14,8 @@ public class HealerDruid extends Healer implements Trainee {
     }
 
     @Override
-    public void printInfo() {
-        super.printInfo();
+    public void info() {
+        super.info();
         if (beast != null) {
             System.out.println("Beast name: " + beast.getName() + ", HP: " + beast.getHP() + ", damage: " + damage);
         }

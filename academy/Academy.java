@@ -1,4 +1,4 @@
-package com.company.heroes;
+package com.company.academy;
 
 import com.company.Trainee;
 

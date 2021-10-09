@@ -1,7 +1,6 @@
-package com.company.teachers;
+package com.company.academy;
 
 import com.company.Trainee;
-import com.company.heroes.Academy;
 import com.company.heroes.HealerDruid;
 
 public class PriestAcademy extends Academy {

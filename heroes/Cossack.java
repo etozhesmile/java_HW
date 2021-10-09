@@ -12,8 +12,8 @@ public class Cossack extends Warrior implements Trainee {
     }
 
     @Override
-    public void printInfo() {
-        super.printInfo();
+    public void info() {
+        super.info();
         System.out.println("I have a saber");
     }
 

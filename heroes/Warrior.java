@@ -3,6 +3,11 @@ package com.company.heroes;
 public class Warrior extends Hero {
     protected double damageMultiplier;
 
+    public Warrior(double HP, int lvl, double damage) {
+        super(HP, lvl, damage);
+        this.damageMultiplier = 1.5;
+    }
+
     public Warrior(double HP, int lvl, double damage, double damageMultiplier) {
         super(HP, lvl, damage);
         this.damageMultiplier = damageMultiplier;
@@ -13,9 +18,8 @@ public class Warrior extends Hero {
         System.out.println("Damaged " + damage);
     }
 
-
     @Override
-    public void printInfo() {
-        System.out.println("HP: " + this.HP + "\nlvl: " + this.lvl);
+    public void info() {
+        super.info();
     }
 }
